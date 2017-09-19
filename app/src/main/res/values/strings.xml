@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Score Keeper - Basquete</string>
+    <string name="team_a">Equipe A</string>
+    <string name="team_b">Equipe B</string>
+    
+    <!--buttons-->
+    <string name="btn_3_pts">+3 pts</string>
+    <string name="btn_2_pts">+2 pts</string>
+    <string name="btn_1_pt">+1 pt</string>
+
+    <!--reset-->
+    <string name="btn_reset">RESET POINTS</string>
+
+</resources>

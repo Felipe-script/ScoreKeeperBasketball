@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- BLOCO A-->
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/eqA"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_a" />
+
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:id="@+id/team_a_scoreA"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                style="@style/buttonA"
+                android:onClick="threeAddA"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="@string/btn_3_pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="@style/buttonA"
+                android:onClick="twoAddA"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="@string/btn_2_pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="@style/buttonA"
+                android:onClick="oneAddA"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="@string/btn_1_pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <View
+
+            android:layout_width="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="200dp"/>
+        <!-- BLOCO B-->
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/eqB"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/team_b" />
+
+            <TextView
+                android:id="@+id/team_a_scoreB"
+                android:layout_marginTop="8dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <Button
+                style="@style/buttonB"
+                android:onClick="threeAddB"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="@string/btn_3_pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="@style/buttonB"
+                android:onClick="twoAddB"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="@string/btn_2_pts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="@style/buttonB"
+                android:onClick="oneAddB"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:text="@string/btn_1_pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:onClick="reset"
+        android:text="@string/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
